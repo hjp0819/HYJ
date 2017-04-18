@@ -1,0 +1,7 @@
+[user]
+	name = Yeong Ju
+	email = hjp0819@gmail.com
+[color]
+	ui = auto
+[http]
+	sslVerify = false

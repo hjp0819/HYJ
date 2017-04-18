@@ -1,0 +1,20 @@
+logrotate state -- version 2
+"/home/yj/.cache/upstart/unity7.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/indicator-sound.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/window-stack-bridge.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/bamfdaemon.log" 2017-4-15-20:41:58
+"/home/yj/.cache/upstart/*.log" 2017-4-14-18:0:0
+"/home/yj/.cache/upstart/indicator-session.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/dbus.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/im-config.log" 2017-4-14-17:57:18
+"/home/yj/.cache/upstart/hud.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/gnome-keyring-ssh.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/update-notifier-release.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/unity-settings-daemon.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/unity-panel-service.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/ssh-agent.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/indicator-keyboard.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/upstart-event-bridge.log" 2017-4-18-19:51:3
+"/home/yj/.cache/upstart/unicast-local-avahi.log" 2017-4-15-20:41:58
+"/home/yj/.cache/upstart/at-spi2-registryd.log" 2017-4-15-20:41:58
+"/home/yj/.cache/upstart/gpg-agent.log" 2017-4-18-19:51:3

@@ -1,0 +1,158 @@
+[2017-04-15 21:55:32] __rvm_make
+__rvm_make () 
+{ 
+    \make "$@" || return $?
+}
+current path: /home/yj/.rvm/src/ruby-2.2.0
+PATH=/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yj/.rvm/bin
+command(2): __rvm_make install
+++ make install
+config.status: creating x86_64-linux-fake.rb
+	CC = gcc
+	LD = ld
+	LDSHARED = gcc -shared
+	CFLAGS = -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -std=iso9899:1999  -fPIC 
+	XCFLAGS = -D_FORTIFY_SOURCE=2 -fstack-protector -fno-strict-overflow -fvisibility=hidden -DRUBY_EXPORT
+	CPPFLAGS =   -I. -I.ext/include/x86_64-linux -I./include -I.
+	DLDFLAGS = -Wl,-soname,libruby.so.2.2  -fstack-protector  
+	SOLIBS = -lpthread -lgmp -ldl -lcrypt -lm  
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+making enc
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 'enc'을(를) 위해 할 일이 없습니다.
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+making srcs under enc
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 'srcs'을(를) 위해 할 일이 없습니다.
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+generating transdb.h
+transdb.h unchanged
+making trans
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: './enc/trans'을(를) 위해 할 일이 없습니다.
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+making encs
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+generating makefile exts.mk
+Failed to configure -test-/win32/console. It will not be installed.
+Failed to configure -test-/win32/dln. It will not be installed.
+Failed to configure -test-/win32/dln/empty. It will not be installed.
+Failed to configure -test-/win32/fd_setsize. It will not be installed.
+configuring socket
+Failed to configure tk. It will not be installed.
+Failed to configure tk/tkutil. It will not be installed.
+Failed to configure win32. It will not be installed.
+Failed to configure win32ole. It will not be installed.
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/console' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/console' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln/empty' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln/empty' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/fd_setsize' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/fd_setsize' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/bigdecimal' 들어감
+installing default bigdecimal libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/bigdecimal' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/date' 들어감
+installing default date_core libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/date' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest' 들어감
+installing digest libraries
+installing default digest libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha2' 들어감
+installing default sha2 libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha2' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiddle' 들어감
+installing default fiddle libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiddle' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/console' 들어감
+installing default console libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/console' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json' 들어감
+installing default libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/nkf' 들어감
+installing default nkf libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/nkf' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/openssl' 들어감
+installing default openssl libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/openssl' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pathname' 들어감
+installing default pathname libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pathname' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/psych' 들어감
+installing default psych libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/psych' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pty' 들어감
+installing default pty libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pty' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/ripper' 들어감
+linking shared-object ripper.so
+installing default ripper libraries
+checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/ripper' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/socket' 들어감
+linking shared-object socket.so
+installing default socket libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/socket' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/syslog' 들어감
+installing default syslog libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/syslog' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk/tkutil' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk/tkutil' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32ole' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32ole' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[2]: 'ruby'은(는) 이미 업데이트되었습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+./miniruby -I./lib -I. -I.ext/common  ./tool/runruby.rb --extout=.ext  -- --disable-gems -r./x86_64-linux-fake ./tool/rbinstall.rb --make="make" --dest-dir="" --extout=".ext" --mflags="" --make-flags="" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"
+installing binary commands:   /home/yj/.rvm/rubies/ruby-2.2.0/bin
+installing base libraries:    /home/yj/.rvm/rubies/ruby-2.2.0/lib
+installing arch files:        /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-linux
+installing pkgconfig data:    /home/yj/.rvm/rubies/ruby-2.2.0/lib/pkgconfig
+installing command scripts:   /home/yj/.rvm/rubies/ruby-2.2.0/bin
+installing library scripts:   /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0
+installing common headers:    /home/yj/.rvm/rubies/ruby-2.2.0/include/ruby-2.2.0
+installing manpages:          /home/yj/.rvm/rubies/ruby-2.2.0/share/man/man1
+installing extension objects: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-linux
+installing extension objects: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/site_ruby/2.2.0/x86_64-linux
+installing extension objects: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/vendor_ruby/2.2.0/x86_64-linux
+installing extension headers: /home/yj/.rvm/rubies/ruby-2.2.0/include/ruby-2.2.0/x86_64-linux
+installing extension scripts: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0
+installing extension scripts: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/site_ruby/2.2.0
+installing extension scripts: /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/vendor_ruby/2.2.0
+installing extension headers: /home/yj/.rvm/rubies/ruby-2.2.0/include/ruby-2.2.0/ruby
+installing default gems:      /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0 (build_info, cache, doc, extensions, gems, specifications)
+                              bigdecimal 1.2.6
+                              io-console 0.4.3
+                              json 1.8.1
+                              psych 2.0.8
+                              rake 10.4.2
+                              rdoc 4.2.0
+installing bundle gems:       /home/yj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0 (build_info, cache, doc, extensions, gems, specifications)
+                              minitest-5.4.3.gem
+                              power_assert-0.2.2.gem
+                              test-unit-3.0.8.gem

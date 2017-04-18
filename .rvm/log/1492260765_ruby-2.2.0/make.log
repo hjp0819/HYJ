@@ -1,0 +1,797 @@
+[2017-04-15 21:54:14] __rvm_make
+__rvm_make () 
+{ 
+    \make "$@" || return $?
+}
+current path: /home/yj/.rvm/src/ruby-2.2.0
+PATH=/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yj/.rvm/bin
+command(2): __rvm_make -j4
+++ make -j4
+	CC = gcc
+	LD = ld
+	LDSHARED = gcc -shared
+	CFLAGS = -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -std=iso9899:1999  -fPIC 
+	XCFLAGS = -D_FORTIFY_SOURCE=2 -fstack-protector -fno-strict-overflow -fvisibility=hidden -DRUBY_EXPORT
+	CPPFLAGS =   -I. -I.ext/include/x86_64-linux -I./include -I.
+	DLDFLAGS = -Wl,-soname,libruby.so.2.2  -fstack-protector  
+	SOLIBS = -lpthread -lgmp -ldl -lcrypt -lm  
+Using built-in specs.
+compiling miniinit.c
+compiling dmydln.c
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.4' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+compiling main.c
+compiling miniprelude.c
+copying dummy probes.h
+compiling bignum.c
+compiling class.c
+compiling compar.c
+compiling complex.c
+compiling dir.c
+compiling dln_find.c
+compiling encoding.c
+compiling enum.c
+compiling enumerator.c
+compiling error.c
+compiling eval.c
+compiling load.c
+compiling proc.c
+compiling file.c
+compiling gc.c
+compiling hash.c
+compiling inits.c
+compiling io.c
+compiling marshal.c
+compiling math.c
+compiling node.c
+compiling numeric.c
+compiling object.c
+compiling pack.c
+compiling parse.c
+compiling process.c
+compiling random.c
+compiling range.c
+compiling rational.c
+compiling re.c
+compiling regcomp.c
+compiling regenc.c
+compiling regerror.c
+compiling regexec.c
+compiling regparse.c
+compiling regsyntax.c
+compiling ruby.c
+compiling safe.c
+compiling signal.c
+compiling sprintf.c
+compiling st.c
+compiling strftime.c
+compiling string.c
+compiling struct.c
+compiling symbol.c
+compiling time.c
+compiling transcode.c
+compiling util.c
+compiling variable.c
+compiling version.c
+compiling compile.c
+compiling debug.c
+compiling iseq.c
+string.c: In function ‘rb_str_enumerate_chars’:
+string.c:6874:3: warning: ‘ary’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   rb_ary_push(ary, substr);
+   ^
+compiling vm.c
+compiling vm_dump.c
+compiling vm_backtrace.c
+compiling vm_trace.c
+compiling thread.c
+compiling cont.c
+compiling ./enc/ascii.c
+compiling ./enc/us_ascii.c
+compiling ./enc/unicode.c
+compiling ./enc/utf_8.c
+compiling newline.c
+compiling ./missing/setproctitle.c
+compiling ./missing/strlcat.c
+compiling ./missing/strlcpy.c
+compiling addr2line.c
+compiling dmyext.c
+compiling dmyenc.c
+compiling dln.c
+compiling localeinit.c
+compiling prelude.c
+compiling array.c
+linking miniruby
+generating encdb.h
+rbconfig.rb updated
+generating enc.mk
+creating verconf.h
+encdb.h updated
+verconf.h updated
+compiling loadpath.c
+making srcs under enc
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 'srcs'을(를) 위해 할 일이 없습니다.
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+generating transdb.h
+linking static-library libruby-static.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+transdb.h updated
+verifying static-library libruby-static.a
+linking shared-library libruby.so.2.2.0
+making enc
+generating makefile exts.mk
+making trans
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+compiling ./enc/big5.c
+compiling ./enc/encdb.c
+compiling ./enc/trans/transdb.c
+configuring -test-/array/resize
+configuring -test-/bignum
+configuring -test-/bug-3571
+configuring -test-/bug-3662
+configuring -test-/bug-5832
+configuring -test-/bug_reporter
+configuring -test-/class
+configuring -test-/debug
+configuring -test-/exception
+compiling ./enc/trans/big5.c
+configuring -test-/fatal
+configuring -test-/file
+configuring -test-/float
+configuring -test-/funcall
+configuring -test-/hash
+configuring -test-/iseq_load
+configuring -test-/iter
+configuring -test-/load/dot.dot
+configuring -test-/marshal/compat
+configuring -test-/marshal/usr
+configuring -test-/method
+configuring -test-/num2int
+configuring -test-/path_to_class
+configuring -test-/postponed_job
+configuring -test-/printf
+configuring -test-/proc
+configuring -test-/rational
+configuring -test-/recursion
+compiling ./enc/trans/chinese.c
+configuring -test-/st/foreach
+configuring -test-/st/numhash
+configuring -test-/st/update
+configuring -test-/string
+configuring -test-/struct
+compiling ./enc/cp949.c
+configuring -test-/symbol
+compiling ./enc/emacs_mule.c
+configuring -test-/tracepoint
+configuring -test-/typeddata
+configuring -test-/wait_for_single_fd
+compiling ./enc/euc_jp.c
+configuring -test-/win32/console
+Failed to configure -test-/win32/console. It will not be installed.
+configuring -test-/win32/dln
+Failed to configure -test-/win32/dln. It will not be installed.
+Failed to configure -test-/win32/dln/empty. It will not be installed.
+configuring -test-/win32/fd_setsize
+Failed to configure -test-/win32/fd_setsize. It will not be installed.
+configuring bigdecimal
+compiling ./enc/euc_kr.c
+configuring continuation
+configuring coverage
+configuring date
+configuring dbm
+compiling ./enc/euc_tw.c
+compiling ./enc/trans/emoji.c
+compiling ./enc/gb2312.c
+compiling ./enc/trans/emoji_iso2022_kddi.c
+compiling ./enc/gb18030.c
+compiling ./enc/gbk.c
+compiling ./enc/iso_8859_1.c
+compiling ./enc/iso_8859_2.c
+compiling ./enc/trans/emoji_sjis_docomo.c
+compiling ./enc/iso_8859_3.c
+compiling ./enc/iso_8859_4.c
+compiling ./enc/iso_8859_5.c
+compiling ./enc/iso_8859_6.c
+compiling ./enc/iso_8859_7.c
+compiling ./enc/trans/emoji_sjis_kddi.c
+compiling ./enc/iso_8859_8.c
+compiling ./enc/iso_8859_9.c
+compiling ./enc/iso_8859_10.c
+compiling ./enc/iso_8859_11.c
+compiling ./enc/trans/emoji_sjis_softbank.c
+compiling ./enc/iso_8859_13.c
+compiling ./enc/trans/escape.c
+compiling ./enc/iso_8859_14.c
+compiling ./enc/trans/gb18030.c
+compiling ./enc/iso_8859_15.c
+compiling ./enc/iso_8859_16.c
+compiling ./enc/koi8_r.c
+compiling ./enc/trans/gbk.c
+compiling ./enc/koi8_u.c
+header: gdbm-ndbm.h
+library: gdbm_compat
+compiling ./enc/shift_jis.c
+compiling ./enc/trans/iso2022.c
+compiling ./enc/utf_16be.c
+compiling ./enc/utf_16le.c
+compiling ./enc/trans/japanese.c
+compiling ./enc/utf_32be.c
+compiling ./enc/trans/japanese_euc.c
+configuring digest
+configuring digest/bubblebabble
+configuring digest/md5
+compiling ./enc/utf_32le.c
+compiling ./enc/windows_31j.c
+compiling ./enc/trans/japanese_sjis.c
+compiling ./enc/windows_1251.c
+linking encoding encdb.so
+linking encoding big5.so
+linking encoding cp949.so
+linking encoding emacs_mule.so
+linking encoding euc_jp.so
+linking encoding euc_kr.so
+linking encoding euc_tw.so
+linking encoding gb2312.so
+configuring digest/rmd160
+linking encoding gb18030.so
+linking encoding gbk.so
+compiling ./enc/trans/korean.c
+linking encoding iso_8859_1.so
+linking encoding iso_8859_2.so
+linking encoding iso_8859_3.so
+linking encoding iso_8859_4.so
+linking encoding iso_8859_5.so
+linking encoding iso_8859_6.so
+linking encoding iso_8859_7.so
+linking encoding iso_8859_8.so
+linking encoding iso_8859_9.so
+linking encoding iso_8859_10.so
+linking encoding iso_8859_11.so
+linking encoding iso_8859_13.so
+linking encoding iso_8859_14.so
+linking encoding iso_8859_15.so
+compiling ./enc/trans/single_byte.c
+configuring digest/sha1
+linking encoding iso_8859_16.so
+linking encoding koi8_r.so
+linking encoding koi8_u.so
+linking encoding shift_jis.so
+linking encoding utf_16be.so
+linking encoding utf_16le.so
+linking encoding utf_32be.so
+linking encoding utf_32le.so
+compiling ./enc/trans/utf8_mac.c
+linking encoding windows_31j.so
+linking encoding windows_1251.so
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+linking transcoder transdb.so
+compiling ./enc/trans/utf_16_32.c
+linking transcoder big5.so
+linking transcoder chinese.so
+linking transcoder emoji.so
+configuring digest/sha2
+linking transcoder emoji_iso2022_kddi.so
+linking transcoder emoji_sjis_docomo.so
+linking transcoder emoji_sjis_kddi.so
+linking transcoder emoji_sjis_softbank.so
+linking transcoder escape.so
+linking transcoder gb18030.so
+linking transcoder gbk.so
+linking transcoder iso2022.so
+linking transcoder japanese.so
+linking transcoder japanese_euc.so
+linking transcoder japanese_sjis.so
+linking transcoder korean.so
+linking transcoder single_byte.so
+linking transcoder utf_16_32.so
+linking transcoder utf8_mac.so
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+making encs
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+configuring etc
+configuring fcntl
+configuring fiber
+configuring fiddle
+configuring gdbm
+configuring io/console
+configuring io/nonblock
+configuring io/wait
+configuring json
+configuring json/generator
+configuring json/parser
+configuring mathn/complex
+configuring mathn/rational
+configuring nkf
+configuring objspace
+configuring openssl
+configuring pathname
+configuring psych
+configuring pty
+configuring racc/cparse
+configuring rbconfig/sizeof
+configuring readline
+configuring ripper
+configuring sdbm
+configuring socket
+configuring stringio
+configuring strscan
+configuring syslog
+configuring thread
+configuring tk
+...........
+check struct members..
+check libraries....
+Use ActiveTcl libraries (if available).
+Search tclConfig.sh and tkConfig.sh...............................
+Fail to find [tclConfig.sh, tkConfig.sh]
+Use X11 libraries (or use TK_XINCLUDES/TK_XLIBSW information on tkConfig.sh).
+Warning:: cannot find X11 library. tcltklib will not be compiled (tcltklib is disabled on your Ruby. That is, Ruby/Tk will not work). Please check configure options. If your Tcl/Tk don't require X11, please try --without-X11.
+Can't find X11 libraries. 
+So, can't make tcltklib.so which is required by Ruby/Tk.
+Failed to configure tk. It will not be installed.
+Failed to configure tk/tkutil. It will not be installed.
+configuring win32
+Failed to configure win32. It will not be installed.
+configuring win32ole
+Failed to configure win32ole. It will not be installed.
+configuring zlib
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/array/resize' 들어감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-3571' 들어감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bignum' 들어감
+compiling resize.c
+compiling bug.c
+compiling bigzero.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-3662' 들어감
+compiling bug.c
+linking shared-object -test-/array/resize.so
+linking shared-object -test-/bug-3571/bug.so
+compiling div.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/array/resize' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-5832' 들어감
+compiling bug.c
+linking shared-object -test-/bug-3662/bug.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-3571' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug_reporter' 들어감
+compiling bug_reporter.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-3662' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/class' 들어감
+compiling init.c
+linking shared-object -test-/bug-5832/bug.so
+compiling init.c
+linking shared-object -test-/bug_reporter/bug_reporter.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug-5832' 나감
+compiling class2name.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/debug' 들어감
+compiling inspector.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bug_reporter' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/exception' 들어감
+compiling ensured.c
+compiling mul.c
+linking shared-object -test-/class.so
+compiling init.c
+compiling init.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/class' 나감
+compiling dataerror.c
+compiling profile_frames.c
+compiling str2big.c
+compiling big2str.c
+compiling enc_raise.c
+linking shared-object -test-/debug.so
+compiling intpack.c
+linking shared-object -test-/exception.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/debug' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/fatal' 들어감
+compiling rb_fatal.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/file' 들어감
+compiling stat.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/exception' 나감
+compiling fs.c
+linking shared-object -test-/fatal/rb_fatal.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/fatal' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/float' 들어감
+compiling nextafter.c
+linking shared-object -test-/bignum.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/funcall' 들어감
+compiling passing_block.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/bignum' 나감
+compiling init.c
+compiling init.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/hash' 들어감
+compiling delete.c
+linking shared-object -test-/funcall/funcall.so
+linking shared-object -test-/file.so
+linking shared-object -test-/float.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/funcall' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/iseq_load' 들어감
+compiling iseq_load.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/file' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/iter' 들어감
+compiling break.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/float' 나감
+compiling init.c
+compiling yield.c
+linking shared-object -test-/iseq_load/iseq_load.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/load/dot.dot' 들어감
+compiling dot.dot.c
+linking shared-object -test-/hash.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/iseq_load' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/marshal/compat' 들어감
+compiling usrcompat.c
+compiling init.c
+linking shared-object -test-/load/dot.dot/dot.dot.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/hash' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/marshal/usr' 들어감
+compiling usrmarshal.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/load/dot.dot' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/method' 들어감
+compiling arity.c
+linking shared-object -test-/iter.so
+linking shared-object -test-/marshal/compat.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/iter' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/num2int' 들어감
+compiling num2int.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/marshal/compat' 나감
+compiling init.c
+linking shared-object -test-/marshal/usr.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/path_to_class' 들어감
+compiling path_to_class.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/marshal/usr' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/postponed_job' 들어감
+compiling postponed_job.c
+linking shared-object -test-/method.so
+linking shared-object -test-/path_to_class/path_to_class.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/method' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/printf' 들어감
+compiling printf.c
+linking shared-object -test-/num2int/num2int.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/path_to_class' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/proc' 들어감
+compiling super.c
+linking shared-object -test-/postponed_job.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/num2int' 나감
+compiling receiver.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/postponed_job' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/rational' 들어감
+compiling rat.c
+compiling init.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/recursion' 들어감
+compiling recursion.c
+linking shared-object -test-/printf.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/printf' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/foreach' 들어감
+compiling foreach.c
+linking shared-object -test-/rational.so
+linking shared-object -test-/proc.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/rational' 나감
+linking shared-object -test-/recursion.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/numhash' 들어감
+compiling numhash.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/proc' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/update' 들어감
+compiling update.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/recursion' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/string' 들어감
+compiling normalize.c
+linking shared-object -test-/st/foreach.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/foreach' 나감
+compiling enc_str_buf_cat.c
+linking shared-object -test-/st/update.so
+linking shared-object -test-/st/numhash.so
+compiling set_len.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/update' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/st/numhash' 나감
+compiling cstr.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/struct' 들어감
+compiling init.c
+compiling member.c
+compiling ellipsize.c
+compiling enc_associate.c
+compiling init.c
+linking shared-object -test-/struct.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/symbol' 들어감
+compiling type.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/struct' 나감
+compiling qsort.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/tracepoint' 들어감
+compiling tracepoint.c
+compiling gc_hook.c
+compiling init.c
+compiling modify.c
+compiling coderange.c
+linking shared-object -test-/tracepoint.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/tracepoint' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/typeddata' 들어감
+compiling typeddata.c
+linking shared-object -test-/symbol.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/wait_for_single_fd' 들어감
+compiling wait_for_single_fd.c
+linking shared-object -test-/string/string.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/symbol' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/console' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/console' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln/empty' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/dln/empty' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/fd_setsize' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/win32/fd_setsize' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/bigdecimal' 들어감
+compiling bigdecimal.c
+linking shared-object -test-/typeddata/typeddata.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/string' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/continuation' 들어감
+compiling continuation.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/typeddata' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/coverage' 들어감
+compiling coverage.c
+linking shared-object -test-/wait_for_single_fd/wait_for_single_fd.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/-test-/wait_for_single_fd' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/date' 들어감
+compiling date_strftime.c
+linking shared-object continuation.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/continuation' 나감
+compiling date_strptime.c
+linking shared-object coverage.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/coverage' 나감
+compiling date_core.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/dbm' 들어감
+compiling dbm.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest' 들어감
+compiling digest.c
+linking shared-object digest.so
+installing digest libraries
+installing default digest libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/bubblebabble' 들어감
+compiling bubblebabble.c
+linking shared-object dbm.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/dbm' 나감
+installing default bigdecimal libraries
+compiling date_parse.c
+linking shared-object digest/bubblebabble.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/bubblebabble' 나감
+installing default date_core libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/md5' 들어감
+compiling md5init.c
+compiling md5ossl.c
+linking shared-object digest/md5.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/md5' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/rmd160' 들어감
+compiling rmd160init.c
+compiling rmd160ossl.c
+linking shared-object digest/rmd160.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/rmd160' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha1' 들어감
+compiling sha1init.c
+compiling sha1ossl.c
+linking shared-object digest/sha1.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha1' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha2' 들어감
+compiling sha2init.c
+compiling sha2ossl.c
+linking shared-object digest/sha2.so
+installing default sha2 libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/digest/sha2' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/etc' 들어감
+generating constant definitions
+compiling etc.c
+linking shared-object bigdecimal.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/bigdecimal' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fcntl' 들어감
+compiling fcntl.c
+linking shared-object fcntl.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fcntl' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiber' 들어감
+compiling fiber.c
+linking shared-object etc.so
+linking shared-object fiber.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/etc' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiber' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/gdbm' 들어감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiddle' 들어감
+compiling pointer.c
+compiling gdbm.c
+compiling handle.c
+compiling closure.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/console' 들어감
+compiling console.c
+compiling conversions.c
+compiling fiddle.c
+linking shared-object date_core.so
+compiling function.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/date' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/nonblock' 들어감
+compiling nonblock.c
+linking shared-object io/console.so
+installing default console libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/console' 나감
+linking shared-object gdbm.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/wait' 들어감
+compiling wait.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/gdbm' 나감
+installing default fiddle libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json' 들어감
+linking shared-object io/nonblock.so
+installing default libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json/generator' 들어감
+compiling generator.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/nonblock' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json/parser' 들어감
+compiling parser.c
+linking shared-object fiddle.so
+linking shared-object io/wait.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/io/wait' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/mathn/complex' 들어감
+compiling complex.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/fiddle' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/mathn/rational' 들어감
+compiling rational.c
+linking shared-object mathn/complex.so
+linking shared-object mathn/rational.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/mathn/complex' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/nkf' 들어감
+compiling nkf.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/mathn/rational' 나감
+installing default nkf libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/objspace' 들어감
+compiling objspace.c
+linking shared-object json/ext/parser.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json/parser' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/openssl' 들어감
+compiling ossl_engine.c
+compiling object_tracing.c
+compiling objspace_dump.c
+compiling ossl_x509attr.c
+linking shared-object json/ext/generator.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/json/generator' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pathname' 들어감
+compiling pathname.c
+linking shared-object objspace.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/objspace' 나감
+compiling ossl_digest.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/psych' 들어감
+compiling psych_yaml_tree.c
+compiling psych_emitter.c
+compiling ossl_x509cert.c
+compiling psych_to_ruby.c
+installing default pathname libraries
+linking shared-object pathname.so
+compiling psych_parser.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pathname' 나감
+compiling ossl_pkey_rsa.c
+compiling psych.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pty' 들어감
+compiling pty.c
+linking shared-object psych.so
+installing default pty libraries
+installing default psych libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/psych' 나감
+linking shared-object pty.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/racc/cparse' 들어감
+compiling cparse.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/pty' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/rbconfig/sizeof' 들어감
+compiling sizes.c
+compiling ossl_pkcs7.c
+linking shared-object rbconfig/sizeof.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/rbconfig/sizeof' 나감
+compiling ossl_bio.c
+linking shared-object racc/cparse.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/racc/cparse' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/readline' 들어감
+compiling readline.c
+linking shared-object nkf.so
+compiling ossl_pkey.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/nkf' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/ripper' 들어감
+compiling ripper.c
+compiling ossl_x509name.c
+compiling ossl_rand.c
+linking shared-object readline.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/readline' 나감
+compiling ossl_cipher.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/sdbm' 들어감
+compiling _sdbm.c
+compiling init.c
+compiling ossl.c
+compiling ossl_asn1.c
+linking shared-object sdbm.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/sdbm' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/socket' 들어감
+generating constant definitions
+generating constant definitions
+compiling basicsocket.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/stringio' 들어감
+compiling stringio.c
+compiling socket.c
+compiling ossl_ssl_session.c
+compiling ipsocket.c
+linking shared-object stringio.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/stringio' 나감
+compiling ossl_x509.c
+compiling tcpsocket.c
+compiling ossl_pkey_dh.c
+compiling tcpserver.c
+checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+installing default ripper libraries
+compiling ossl_x509revoked.c
+compiling sockssocket.c
+compiling udpsocket.c
+compiling ossl_ssl.c
+compiling unixsocket.c
+compiling ossl_bn.c
+compiling unixserver.c
+compiling option.c
+compiling ossl_pkey_ec.c
+compiling ossl_pkey_dsa.c
+compiling ancdata.c
+compiling ossl_pkcs12.c
+linking shared-object ripper.so
+compiling ossl_x509ext.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/ripper' 나감
+compiling openssl_missing.c
+compiling raddrinfo.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/strscan' 들어감
+compiling strscan.c
+compiling ossl_ns_spki.c
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/syslog' 들어감
+compiling syslog.c
+compiling ossl_ocsp.c
+linking shared-object syslog.so
+installing default syslog libraries
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/syslog' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/thread' 들어감
+compiling thread.c
+linking shared-object strscan.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/strscan' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk/tkutil' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/tk/tkutil' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32ole' 들어감
+make[2]: 'all'을(를) 위해 할 일이 없습니다.
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/win32ole' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/zlib' 들어감
+compiling zlib.c
+compiling ifaddr.c
+compiling ossl_x509store.c
+linking shared-object thread.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/thread' 나감
+compiling ossl_config.c
+installing default socket libraries
+compiling init.c
+compiling ossl_hmac.c
+compiling ossl_x509crl.c
+compiling constants.c
+compiling ossl_pkcs5.c
+compiling ossl_x509req.c
+installing default openssl libraries
+linking shared-object openssl.so
+linking shared-object zlib.so
+linking shared-object socket.so
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/zlib' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/socket' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0/ext/openssl' 나감
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 들어감
+linking shared-library libruby.so.2.2.0
+linking ruby
+make[2]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감
+make[1]: 디렉터리 '/home/yj/.rvm/src/ruby-2.2.0' 나감

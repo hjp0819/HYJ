@@ -1,0 +1,82 @@
+[2017-04-15 21:55:53] alias_delete_execute
+alias_delete_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$1" ]]; then
+            \command \rm -fv "$_path/$1" || return $?;
+        fi;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$1" "delete";
+    alias_after_delete_default "$1" || return $?
+}
+current path: /home/yj
+GEM_HOME=/home/yj/.rvm/gems/ruby-2.2.0
+PATH=/home/yj/.rvm/gems/ruby-2.2.0/bin:/home/yj/.rvm/gems/ruby-2.2.0@global/bin:/home/yj/.rvm/rubies/ruby-2.2.0/bin:/home/yj/.rvm/bin:/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GEM_PATH=/home/yj/.rvm/gems/ruby-2.2.0:/home/yj/.rvm/gems/ruby-2.2.0@global
+command(2): alias_delete_execute default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/yj/.rvm/rubies/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/yj/.rvm/environments/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/yj/.rvm/wrappers/default ]]
++ __rvm_db_ /home/yj/.rvm/config/alias default delete
++ typeset __db __key __value
++ __db=/home/yj/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=delete
++ case "${__value}" in
++ __rvm_db_remove /home/yj/.rvm/config/alias default
++ [[ -f /home/yj/.rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/yj/.rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /home/yj/.rvm/config/alias
++ command mv -f /home/yj/.rvm/config/alias.new /home/yj/.rvm/config/alias
++ mv -f /home/yj/.rvm/config/alias.new /home/yj/.rvm/config/alias
++ alias_after_delete_default default
++ [[ default == \d\e\f\a\u\l\t ]]
++ for _path in '"$rvm_bin_path"/default_*'
++ [[ -f /home/yj/.rvm/bin/default_* ]]
++ _path='/home/yj/.rvm/bin/default_*'
++ [[ -f /home/yj/.rvm/bin/default_* ]]
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path='*'
++ command rm -fv '/home/yj/.rvm/bin/*'
++ rm -fv '/home/yj/.rvm/bin/*'
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=gem
++ command rm -fv /home/yj/.rvm/bin/gem
++ rm -fv /home/yj/.rvm/bin/gem
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=irb
++ command rm -fv /home/yj/.rvm/bin/irb
++ rm -fv /home/yj/.rvm/bin/irb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=erb
++ command rm -fv /home/yj/.rvm/bin/erb
++ rm -fv /home/yj/.rvm/bin/erb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ri
++ command rm -fv /home/yj/.rvm/bin/ri
++ rm -fv /home/yj/.rvm/bin/ri
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rdoc
++ command rm -fv /home/yj/.rvm/bin/rdoc
++ rm -fv /home/yj/.rvm/bin/rdoc
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=testrb
++ command rm -fv /home/yj/.rvm/bin/testrb
++ rm -fv /home/yj/.rvm/bin/testrb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rake
++ command rm -fv /home/yj/.rvm/bin/rake
++ rm -fv /home/yj/.rvm/bin/rake
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ruby
++ command rm -fv /home/yj/.rvm/bin/ruby
++ rm -fv /home/yj/.rvm/bin/ruby
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=bundle
++ command rm -fv /home/yj/.rvm/bin/bundle
++ rm -fv /home/yj/.rvm/bin/bundle

@@ -1,0 +1,25 @@
+[2017-04-15 21:55:43] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/yj/.rvm/src/ruby-2.2.0
+PATH=/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yj/.rvm/bin
+command(8): __rvm_set_executable /home/yj/.rvm/rubies/ruby-2.2.0/bin/erb /home/yj/.rvm/rubies/ruby-2.2.0/bin/gem /home/yj/.rvm/rubies/ruby-2.2.0/bin/irb /home/yj/.rvm/rubies/ruby-2.2.0/bin/rake /home/yj/.rvm/rubies/ruby-2.2.0/bin/rdoc /home/yj/.rvm/rubies/ruby-2.2.0/bin/ri /home/yj/.rvm/rubies/ruby-2.2.0/bin/ruby
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/erb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/gem ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/irb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/rake ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/rdoc ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/ri ]]
+++ for __file in '"$@"'
+++ [[ -x /home/yj/.rvm/rubies/ruby-2.2.0/bin/ruby ]]

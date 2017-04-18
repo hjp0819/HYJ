@@ -1,0 +1,65 @@
+[2017-04-15 21:53:38] __rvm_package_extract
+__rvm_package_extract () 
+{ 
+    rvm_debug __rvm_package_extract:$#: "$@";
+    \typeset __tempdir __path __file __return;
+    __return=0;
+    __tempdir="$( TMPDIR="${rvm_tmp_path}" mktemp -d -t rvm-tmp.XXXXXXXXX )";
+    __rvm_package_extract_run "$1" "$__tempdir" || __return=$?;
+    if (( __return == 0 )); then
+        for __path in "$__tempdir"/*;
+        do
+            __file="${__path##*/}";
+            if [[ -n "${__file}" && -e "$2/${__file}" ]]; then
+                \command \rm -rf "$2/${__file}" || __return=$?;
+            fi;
+            \command \mv -f "${__path}" "$2/" || __return=$?;
+        done;
+    fi;
+    if [[ -n "$__tempdir" ]]; then
+        \command \rm -rf "$__tempdir";
+    fi;
+    return $__return
+}
+current path: /home/yj/.rvm/src
+PATH=/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yj/.rvm/bin
+command(3): __rvm_package_extract /home/yj/.rvm/archives/ruby-2.2.0.tar.bz2 /home/yj/.rvm/tmp/rvm_src_3192
+++ rvm_debug __rvm_package_extract:2: /home/yj/.rvm/archives/ruby-2.2.0.tar.bz2 /home/yj/.rvm/tmp/rvm_src_3192
+++ ((  0  ))
+++ return 0
+++ typeset __tempdir __path __file __return
+++ __return=0
++++ TMPDIR=/home/yj/.rvm/tmp
++++ mktemp -d -t rvm-tmp.XXXXXXXXX
+++ __tempdir=/home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5
+++ __rvm_package_extract_run /home/yj/.rvm/archives/ruby-2.2.0.tar.bz2 /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5
+++ [[    != *\ \-\-\n\o\-\s\a\m\e\-\o\w\n\e\r\ * ]]
+++ __rvm_tar --help
+++ __rvm_grep -- --no-same-owner
+++ GREP_OPTIONS=
+++ command grep -- --no-same-owner
+++ grep -- --no-same-owner
+++ rvm_tar_options=--no-same-owner
+++ [[ -d /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5 ]]
+++ case "$1" in
+++ [[ -n '' ]]
+++ __rvm_tar xjf /home/yj/.rvm/archives/ruby-2.2.0.tar.bz2 -C /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5 --no-same-owner
+++ tar xjf /home/yj/.rvm/archives/ruby-2.2.0.tar.bz2 -C /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5 --no-same-owner
+++ __rvm_fix_group_permissions /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5/ruby-2.2.0
+++ umask -S
+++ __rvm_grep g=rw
+++ GREP_OPTIONS=
+++ command grep g=rw
+++ grep g=rw
+++ chmod -R g+rwX /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5/ruby-2.2.0
+++ ((  __return == 0  ))
+++ for __path in '"$__tempdir"/*'
+++ __file=ruby-2.2.0
+++ [[ -n ruby-2.2.0 ]]
+++ [[ -e /home/yj/.rvm/tmp/rvm_src_3192/ruby-2.2.0 ]]
+++ command mv -f /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5/ruby-2.2.0 /home/yj/.rvm/tmp/rvm_src_3192/
+++ mv -f /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5/ruby-2.2.0 /home/yj/.rvm/tmp/rvm_src_3192/
+++ [[ -n /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5 ]]
+++ command rm -rf /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5
+++ rm -rf /home/yj/.rvm/tmp/rvm-tmp.2FVCBOZf5
+++ return 0

@@ -1,0 +1,20 @@
+[2017-04-15 21:54:14] __rvm_post_configure_ruby
+__rvm_post_configure_ruby () 
+{ 
+    __rvm_post_configure_ruby_fix_athlon_sse2;
+    __rvm_post_configure_ruby_update_setup
+}
+current path: /home/yj/.rvm/src/ruby-2.2.0
+PATH=/home/yj/bin:/home/yj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/yj/.rvm/bin
+command(1): __rvm_post_configure_ruby
+++ __rvm_post_configure_ruby_fix_athlon_sse2
+++ [[ -f /proc/cpuinfo ]]
+++ [[ -f Makefile ]]
+++ __rvm_grep '^XCFLAGS = .*-msse2' Makefile
+++ GREP_OPTIONS=
+++ command grep '^XCFLAGS = .*-msse2' Makefile
+++ grep '^XCFLAGS = .*-msse2' Makefile
+++ return 1
+++ __rvm_post_configure_ruby_update_setup
+++ typeset option
+++ ((  0 == 1  ))
